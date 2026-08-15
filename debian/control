@@ -1,0 +1,30 @@
+Source: qimsdk-smartvenc
+Section: misc
+Priority: optional
+Maintainer: Bala Sai Kosuri <bkosuri@qti.qualcomm.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ libfastcvopt-dev,
+ cmake,
+ pkgconf,
+ libglib2.0-dev,
+Standards-Version: 4.6.2
+
+Package: libqimsdk-smartvenc-dev
+Section: libdevel
+Architecture: arm64
+Depends:
+ libqimsdk-smartvenc1 (= ${binary:Version}),
+ ${misc:Depends},
+Description: QCOM library for smart video codec control logic - Development files
+ Development package.
+
+Package: libqimsdk-smartvenc1
+Section: libs
+Architecture: arm64
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: QCOM library for smart video codec control logic - Library
+ Library package.
