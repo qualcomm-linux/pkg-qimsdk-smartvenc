@@ -1,5 +1,6 @@
-qimsdk-smartvenc (1.0.4-0qli+staging1~) UNRELEASED; urgency=medium
+qimsdk-smartvenc (1.0.4-0qli+staging1) forky; urgency=medium
 
+  [ Bala Sai Kosuri ]
   * Initial release
 
- -- Bala Sai Kosuri <bkosuri@qti.qualcomm.com>  Mon, 10 Aug 2026 11:55:05 +0530
+ -- Debusine Action Bot <noreply@bot.invalid>  Tue, 25 Aug 2026 09:14:06 +0000
