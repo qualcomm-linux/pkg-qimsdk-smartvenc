@@ -1,3 +1,9 @@
+qimsdk-smartvenc (1.0.4-0qli+staging2~bpo13+1~) UNRELEASED; urgency=medium
+
+  * Rebuild for trixie.
+
+ -- Bala Sai Kosuri <bkosuri@qti.qualcomm.com>  Tue, 01 Sep 2026 15:29:38 +0530
+
 qimsdk-smartvenc (1.0.4-0qli+staging2~) UNRELEASED; urgency=medium
 
   * Unreleased changes
