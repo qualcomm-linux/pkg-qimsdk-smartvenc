@@ -1,6 +1,7 @@
 qimsdk-smartvenc (1.0.4-0qli+staging2~) UNRELEASED; urgency=medium
 
   * Unreleased changes
+  * d/control: Update description
 
  -- Debusine Action Bot <noreply@bot.invalid>  Tue, 25 Aug 2026 09:17:47 +0000
 
