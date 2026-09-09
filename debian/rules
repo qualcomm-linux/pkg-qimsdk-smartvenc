@@ -2,3 +2,15 @@
 
 %:
 	dh $@
+
+override_dh_auto_install:
+	# Extract orig tarball build into debian/tmp, so that we can use
+	# common .install files.
+	mkdir -p debian/tmp
+	rsync -avh libqimsdk-smartvenc-dev/arm64/ debian/tmp/
+	rsync -avh libqimsdk-smartvenc1/arm64/ debian/tmp/
+	# Remove auto-generated files from the pre-built binaries
+	rm debian/tmp/usr/share/doc/libqimsdk-smartvenc-dev/changelog.gz
+	rm debian/tmp/usr/share/doc/libqimsdk-smartvenc-dev/copyright
+	rm debian/tmp/usr/share/doc/libqimsdk-smartvenc1/changelog.gz
+	rm debian/tmp/usr/share/doc/libqimsdk-smartvenc1/copyright

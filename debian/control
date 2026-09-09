@@ -9,6 +9,7 @@ Build-Depends:
  libfastcvopt-dev,
  libglib2.0-dev,
  pkgconf,
+ rsync,
 Standards-Version: 4.6.2
 Homepage: https://www.qualcomm.com/developer/software/qualcomm-intelligent-multimedia-sdk
 Vcs-Browser: https://github.com/qualcomm-linux/pkg-qimsdk-smartvenc
