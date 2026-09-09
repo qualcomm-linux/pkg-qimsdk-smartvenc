@@ -3,10 +3,10 @@ Section: misc
 Maintainer: Bala Sai Kosuri <bkosuri@qti.qualcomm.com>
 Build-Depends:
  debhelper-compat (= 13),
- libfastcvopt-dev,
  cmake,
- pkgconf,
+ libfastcvopt-dev,
  libglib2.0-dev,
+ pkgconf,
 Standards-Version: 4.6.2
 
 Package: libqimsdk-smartvenc-dev
@@ -26,8 +26,8 @@ Package: libqimsdk-smartvenc1
 Section: libs
 Architecture: arm64
 Depends:
- ${shlibs:Depends},
  ${misc:Depends},
+ ${shlibs:Depends},
 Description: Qualcomm smart video encoder control library
  This library provides adaptive video encoder control algorithms for Qualcomm
  IoT platforms. It analyzes incoming video frames to dynamically adjust
