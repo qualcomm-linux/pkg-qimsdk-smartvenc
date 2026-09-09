@@ -1,0 +1,5 @@
+# we do not have control over how libraries are built
+hardening-no-bindnow [usr/lib/aarch64-linux-gnu/*.so*]
+
+# we do not want to track symbols
+no-symbols-control-file usr/lib/aarch64-linux-gnu/*.so*
