@@ -1,5 +1,8 @@
 #!/usr/bin/make -f
 
+DBGSYM_DIR = debian/.debhelper/libqimsdk-smartvenc1
+DBGSYM_ROOT = $(DBGSYM_DIR)/dbgsym-root
+
 %:
 	dh $@
 
@@ -14,3 +17,19 @@ override_dh_auto_install:
 	rm debian/tmp/usr/share/doc/libqimsdk-smartvenc-dev/copyright
 	rm debian/tmp/usr/share/doc/libqimsdk-smartvenc1/changelog.gz
 	rm debian/tmp/usr/share/doc/libqimsdk-smartvenc1/copyright
+
+# The pre-built library is already stripped and its debug symbols are shipped
+# separately as a detached .build-id/ tree, so dh_strip cannot extract them
+# itself. Stage them where dh_strip would have put its own and record their
+# build-ids; dh_gencontrol, dh_md5sums and dh_builddeb then emit the automatic
+# libqimsdk-smartvenc1-dbgsym package as usual. Staging before dh_strip lets it
+# add the usr/share/doc symlink and honour DEB_BUILD_OPTIONS=noautodbgsym.
+override_dh_strip:
+	rm -rf $(DBGSYM_ROOT)
+	mkdir -p $(DBGSYM_ROOT)
+	rsync -avh libqimsdk-smartvenc1-dbgsym/arm64/ $(DBGSYM_ROOT)/
+	# Populate the correct build-ids
+	find $(DBGSYM_ROOT)/usr/lib/debug/.build-id -name '*.debug' -printf '%P\n' \
+		| sed -e 's|/||' -e 's|\.debug$$||' | LC_ALL=C sort | tr '\n' ' ' \
+		> $(DBGSYM_DIR)/dbgsym-build-ids
+	dh_strip -X/usr/lib/aarch64-linux-gnu/libqimsdk-smartvenc.so*
