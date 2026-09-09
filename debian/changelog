@@ -1,9 +1,10 @@
-qimsdk-smartvenc (1.0.4-0qli1~) UNRELEASED; urgency=medium
+qimsdk-smartvenc (1.0.4-0qli1) forky; urgency=medium
 
+  [ Lukas Märdian ]
   * Rebuild for QLI.
   * d/gbp.conf: Update for QLI.
 
- -- Lukas Märdian <lukas.maerdian@oss.qualcomm.com>  Wed, 09 Sep 2026 12:48:46 +0200
+ -- Debusine Action Bot <noreply@bot.invalid>  Wed, 09 Sep 2026 10:51:24 +0000
 
 qimsdk-smartvenc (1.0.4-0qli+staging2) forky; urgency=medium
 
