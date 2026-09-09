@@ -1,6 +1,8 @@
 Source: qimsdk-smartvenc
 Section: non-free/libs
 Maintainer: Bala Sai Kosuri <bkosuri@qti.qualcomm.com>
+Uploaders:
+ Lukas Märdian <lukas.maerdian@oss.qualcomm.com>
 Build-Depends:
  debhelper-compat (= 13),
  cmake,
