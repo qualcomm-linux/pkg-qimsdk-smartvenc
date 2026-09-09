@@ -1,8 +1,12 @@
 qimsdk-smartvenc (1.0.4-0qli+staging2~bpo13+2~) UNRELEASED; urgency=medium
 
-  * Unreleased changes
+  * Rebuild for trixie.
+  * d/gbp.conf: Update for trixie.
+  * Note for ~bpo13+1 the version was already bumped to +staging2 (through
+    automation), even though that version not exist in debian/latest, yet.
+    ~bpo13+2 will now be bigger than ~bpo13+1 and include the real +staging2.
 
- -- Debusine Action Bot <noreply@bot.invalid>  Sun, 06 Sep 2026 14:49:15 +0000
+ -- Lukas Märdian <lukas.maerdian@oss.qualcomm.com>  Wed, 09 Sep 2026 12:38:51 +0200
 
 qimsdk-smartvenc (1.0.4-0qli+staging2) forky; urgency=medium
 
