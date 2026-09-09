@@ -1,8 +1,9 @@
-qimsdk-smartvenc (1.0.4-0qli+staging2~bpo13+3~) UNRELEASED; urgency=medium
+qimsdk-smartvenc (1.0.4-0qli1~bpo13+1~) UNRELEASED; urgency=medium
 
-  * Unreleased changes
+  * Rebuild for trixie/QLI.
+  * d/gbp.conf: Update for QLI.
 
- -- Debusine Action Bot <noreply@bot.invalid>  Wed, 09 Sep 2026 10:48:24 +0000
+ -- Lukas Märdian <lukas.maerdian@oss.qualcomm.com>  Wed, 09 Sep 2026 12:52:43 +0200
 
 qimsdk-smartvenc (1.0.4-0qli+staging2~bpo13+2) trixie; urgency=medium
 
