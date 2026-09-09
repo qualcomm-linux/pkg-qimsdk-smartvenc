@@ -1,5 +1,5 @@
 Source: qimsdk-smartvenc
-Section: misc
+Section: non-free/libs
 Maintainer: Bala Sai Kosuri <bkosuri@qti.qualcomm.com>
 Build-Depends:
  debhelper-compat (= 13),
@@ -10,7 +10,7 @@ Build-Depends:
 Standards-Version: 4.6.2
 
 Package: libqimsdk-smartvenc-dev
-Section: libdevel
+Section: non-free/libdevel
 Architecture: arm64
 Depends:
  libqimsdk-smartvenc1 (= ${binary:Version}),
@@ -23,7 +23,6 @@ Description: Qualcomm smart video encoder control library - development files
  control API.
 
 Package: libqimsdk-smartvenc1
-Section: libs
 Architecture: arm64
 Depends:
  ${misc:Depends},
