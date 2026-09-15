@@ -1,0 +1,41 @@
+Source: qimsdk-smartvenc
+Section: non-free/libs
+Maintainer: Bala Sai Kosuri <bkosuri@qti.qualcomm.com>
+Uploaders:
+ Lukas Märdian <lukas.maerdian@oss.qualcomm.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ libfastcvopt-dev,
+ libglib2.0-dev,
+ pkgconf,
+ rsync,
+Standards-Version: 4.6.2
+Homepage: https://www.qualcomm.com/developer/software/qualcomm-intelligent-multimedia-sdk
+Vcs-Browser: https://github.com/qualcomm-linux/pkg-qimsdk-smartvenc
+Vcs-Git: https://github.com/qualcomm-linux/pkg-qimsdk-smartvenc.git
+
+Package: libqimsdk-smartvenc-dev
+Section: non-free/libdevel
+Architecture: arm64
+Depends:
+ libqimsdk-smartvenc1 (= ${binary:Version}),
+ ${misc:Depends},
+Description: Qualcomm smart video encoder control library - development files
+ This package contains the development headers and files for the
+ libqimsdk-smartvenc library.
+ .
+ Install this package to develop applications using the smart video encoder
+ control API.
+
+Package: libqimsdk-smartvenc1
+Architecture: arm64
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: Qualcomm smart video encoder control library
+ This library provides adaptive video encoder control algorithms for Qualcomm
+ IoT platforms. It analyzes incoming video frames to dynamically adjust
+ H.264 and H.265 encoder parameters based on scene content and motion levels,
+ including bitrate, frame rate, and GOP length. It also supports Region of
+ Interest (ROI) quality control using ML-provided object detection data.
