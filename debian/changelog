@@ -1,9 +1,9 @@
-qimsdk-smartvenc (1.0.4-0qcom1) UNRELEASED; urgency=medium
+qimsdk-smartvenc (1.0.4-0qcom1) resolute; urgency=medium
 
   [ Bala Sai Kosuri ]
   * Backport from debian/latest
 
- -- Bala Sai Kosuri <bkosuri@qti.qualcomm.com>  Wed, 09 Sep 2026 20:31:22 +0530
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Wed, 16 Sep 2026 17:12:39 +0000
 
 qimsdk-smartvenc (1.0.4-0qli1) forky; urgency=medium
 
